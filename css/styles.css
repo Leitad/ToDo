@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+body{
+    max-width: 1200px;
+    background-color: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedorMain{
+    padding: 0.5em;
+    width: 95%;
+    border-radius: 15px;
+    background-color: lightgray;
+    box-shadow: mediumpurple;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedorColor{
+    display: flex;
+    padding: 5px;
+}
+.color{
+    display: none;
+}
+.color:checked + label{
+    border: 3px orange solid;
+}
+.verde, .amarillo, .rojo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px lightgray solid;
+    margin: 0;
+}
+.verde:checked, .amarillo:checked, .rojo:checked{
+    border: 3px orange solid;
+
+}
+.amarillo{
+    background-color:yellow;
+}
+.verde{
+    background-color: green;
+}
+.rojo{
+    background-color: red;
+}
+.eliminar{
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* preguntar otra solucion para centrar*/
+.fechaLimite{
+    position: absolute;
+    left: 45%;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    display: block;
+}
+.toDo{
+    vertical-align: middle; 
+    display: flex;
+}
+.nombreToDo{
+    max-width: 40%;
+}

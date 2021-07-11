@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+    <title>To Do</title>
+</head>
+<body>
+
+    <main class="contenedorMain">
+       <section>
+          <label for="textoTarea">Introduzca un nombre para la tarea</label>
+          <input type="text" id="textoTarea">
+          <div class="contenedorColor">
+          <input type="radio" name="color" id="colorVerde" class="color colorVerde"  value="green" checked>
+          <label for="colorVerde" class="verde"></label>
+          <input type="radio" name="color" id="colorAmarillo" class="color colorAmarillo" value="yellow" >
+          <label for="colorAmarillo" class="amarillo"></label>
+          <input type="radio" name="color" id="colorRojo" class="color colorRojo" value="red" >    
+          <label for="colorRojo" class="rojo"></label>
+        <input type="date" name="" id="fechaLimite">
+        <input type="time" name="" id="horaLimite">
+        <button type="button" id="nuevoToDo">Mandar tarea</button> 
+    </div>
+      
+        <article id="listaToDo">
+
+        </article>
+    </section>
+    </main>
+</body>
+</html>
