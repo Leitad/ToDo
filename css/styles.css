@@ -15,7 +15,7 @@ body{
     background-color: lightgray;
     box-shadow: mediumpurple;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 .contenedorColor{
     display: flex;

@@ -24,7 +24,7 @@ function comprobarCampos(){
         return
     }
     anadirToDo() 
-    resetCampos()
+    resetCampos() 
 }
 function resetCampos(){
     document.getElementById("textoTarea").value=""
