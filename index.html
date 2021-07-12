@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,38 @@
     <script src="scripts/script.js"></script>
     <title>To Do</title>
 </head>
+
 <body>
     <main class="contenedorMain">
-       <section>
-          <label for="textoTarea">Introduzca un nombre para la tarea</label>
-          <input type="text" id="textoTarea">
-          <div class="contenedorColor">
-          <input type="radio" name="color" id="colorVerde" class="color colorVerde"  value="green" checked>
-          <label for="colorVerde" class="verde"></label>
-          <input type="radio" name="color" id="colorAmarillo" class="color colorAmarillo" value="yellow" >
-          <label for="colorAmarillo" class="amarillo"></label>
-          <input type="radio" name="color" id="colorRojo" class="color colorRojo" value="red" >    
-          <label for="colorRojo" class="rojo"></label>
-        <input type="date" name="" id="fechaLimite">
-        <input type="time" name="" id="horaLimite">
-        <button type="button" id="nuevoToDo">Mandar tarea</button> 
-    </div>
-      
-        <article id="listaToDo">
-
-        </article>
-    </section>
+        <section class="caja">
+            <div class="flex">
+                <label for="textoTarea">Introduzca un nombre o selecione las diferentes tareas:</label>
+                <input list="textoTareas" id="textoTarea">
+                <datalist id="textoTareas"></datalist>
+            </div>
+            <div class="flex">
+                <input type="radio" name="color" id="colorVerde" class="color colorVerde" value="lightgreen" checked>
+                <label for="colorVerde" class="verde"></label>
+                <input type="radio" name="color" id="colorAmarillo" class="color colorAmarillo" value="lightyellow">
+                <label for="colorAmarillo" class="amarillo"></label>
+                <input type="radio" name="color" id="colorRojo" class="color colorRojo" value="rgb(255, 122, 122)">
+                <label for="colorRojo" class="rojo"></label>
+                <input type="date" name="" id="fechaLimite">
+                <input type="time" name="" id="horaLimite">
+                <button type="button" id="nuevoToDo">Mandar ToDo</button>
+            </div>
+        </section>
+        <section class="caja">
+            <div class="flex columns" id="listaToDo"></div>
+        </section>
+        <section id="otrasOpciones" class="caja">
+            <div class="flex">
+                <label for="textoAnadirTarea">Nueva Tarea:</label>
+                <input id="textoAnadirTarea">
+                <button type="button" id="anadirTarea">Añadir</button>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>

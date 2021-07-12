@@ -1,72 +1,109 @@
-*{
+* {
     box-sizing: border-box;
     border-radius: 4px;
+    margin: 3px;
 }
-body{
+
+body {
     max-width: 1200px;
-    background-color: lightskyblue;
+    background-color: lightslategrey;
     margin-left: auto;
     margin-right: auto;
 }
-.contenedorMain{
-    padding: 0.5em;
+
+button {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+button:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.contenedorMain {
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja {
+    padding: 0.5em;
     border-radius: 15px;
     background-color: lightgray;
-    box-shadow: mediumpurple;
+    box-shadow: 10px 10px 5px mediumpurple;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    margin-top: 5px;
 }
-.contenedorColor{
+
+.flex {
     display: flex;
-    padding: 5px;
+    padding: 3px;
 }
-.color{
+
+.color {
     display: none;
 }
-.color:checked + label{
+
+.color:checked+label {
     border: 3px orange solid;
 }
-.verde, .amarillo, .rojo{
+
+.verde,
+.amarillo,
+.rojo {
     display: block;
     width: 30px;
     height: 30px;
     border: 3px lightgray solid;
     margin: 0;
 }
-.verde:checked, .amarillo:checked, .rojo:checked{
-    border: 3px orange solid;
 
+.verde:checked,
+.amarillo:checked,
+.rojo:checked {
+    border: 3px orange solid;
 }
-.amarillo{
-    background-color:yellow;
+
+.amarillo {
+    background-color: yellow;
 }
-.verde{
+
+.verde {
     background-color: green;
 }
-.rojo{
+
+.rojo {
     background-color: red;
 }
-.eliminar{
-    display: block;
+
+.eliminar,
+.nombreToDo,
+.fechaLimite {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.eliminar {
     margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 3%;
+    min-width: 1em;
 }
-/* preguntar otra solucion para centrar*/
-.fechaLimite{
-    position: absolute;
-    left: 45%;
-    width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 100%;
-    display: block;
-}
-.toDo{
-    vertical-align: middle; 
+
+.toDo {
+    margin: 3px;
     display: flex;
 }
-.nombreToDo{
-    max-width: 40%;
+
+.columns {
+    flex-direction: column;
+}
+
+.nombreToDo {
+    width: 40%;
 }
